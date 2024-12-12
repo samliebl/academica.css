@@ -1,12 +1,160 @@
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+}
+
+h1+p,h1 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+sup {
+    line-height: 0;
+}
+
+p+p {
+    text-indent: 3rem;
+    /* Adjust the indent size as needed */
+}
+
+.lede {
+    margin: 0 0 1rem 0;
+}
+
+.lede+p {
+    text-indent: 0;
+}
+
+p {
+    margin: 0 0 0 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    margin:0;
+}
+
+h1 {
+    margin: 1rem 0 0 0;
+    font-size:2rem;
+}
+
+h2 {
+    border-bottom: #ddd 1px solid;
+    margin: 1rem 0 0.25rem 0;
+}
+
+h3 {
+    margin:1rem 0 1rem 0;
+}
+
+h4 {
+    margin:1rem 0 0 0;
+}
+
+h5 {
+    margin: 1rem 0 0 0;
+    font-weight: 700;
+}
+
+h6 {
+    margin: 1rem 0 0 0;
+    font-style: italic;
+    font-weight: 400;
+}
+
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before
+ {
+    position: absolute;
+    margin: 0 0 0 -2rem;
+    font-family: menlo;
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsla(0, 100%, 50%, 1);
+}
+
+h1::before {
+    content: "h1";
+    font-style: normal;
+}
+h2::before {
+    content: "h2";
+    font-style: normal;
+}
+h3::before {
+    content: "h3";
+    font-style: normal;
+}
+h4::before {
+    content: "h4";
+    font-style: normal;
+}
+h5::before {
+    content: "h5";
+    font-style: normal;
+}
+h6::before {
+    content: "h6";
+    font-style: normal;
+}
+
+/* Lists */
+
+ul {
+    padding: 0 0 0 3rem;
+}
+
+blockquote {
+    margin-left: 0;
+    padding: 0 0 0 3rem;
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: item;
+    padding: 0 0 0 1rem;
+}
+
+ol>li {
+    display: table;
+    counter-increment: item;
+/*    margin-bottom: 0.6em;*/
+}
+
+ol>li::before {
+    content: counters(item, ".") ". ";
+    display: table-cell;
+    padding-right: 0.5rem;
+}
+
+li ol>li {
+    margin: 0;
+}
+
+li ol>li::before {
+    content: counters(item, ".") " ";
+}
+
 /* Text */
 
 .emdash {
     display: inline-block;
     width: var(--width-1-2);
     background: var(--text);
-    height: 0.0625em;
+    height: 0.0625rem;
     /* Rem/em conversion: 1/16 */
     line-height: 0;
-    vertical-align: 0.25em;
+    vertical-align: 0.25rem;
     /* Rem/em conversion: 4/16 */
 }
