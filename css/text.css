@@ -1,0 +1,12 @@
+/* Text */
+
+.emdash {
+    display: inline-block;
+    width: var(--width-1-2);
+    background: var(--text);
+    height: 0.0625em;
+    /* Rem/em conversion: 1/16 */
+    line-height: 0;
+    vertical-align: 0.25em;
+    /* Rem/em conversion: 4/16 */
+}
