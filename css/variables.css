@@ -1,9 +1,5 @@
 /* Variables */
 
-:root {
-	--font-tnr: 'Times New Roman', 'Times Roman', Times, serif;
-}
-
 /* Colors as variables */
 :root {
     /* HTML5 Boilerplate */
@@ -43,14 +39,15 @@
     --width-1-2: calc(var(--width)/2);
     --width-1-4: calc(var(--width)/4);
     --width-1-5: calc(var(--width)/5);
-    /* Thanks to Inter by https://rsms.me/ */
-    --font-ss: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-int: Inter, sans-serif;
     --inter-font-feature-settings: 'liga'1, 'calt'1;
     /* fix for Chrome */
     --font-size: 1rem;
     --font-size-italic: 1.05rem;
     --font-size-monospace: calc(var(--font-size)*0.85);
+    --font-size-ss-ss: calc(var(--font-size)*0.75);
+    /* Thanks to Inter by https://rsms.me/ */
+    --font-ss: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-int: Inter, sans-serif;
     --font-rm: 'Roboto Mono', monospace;
 	--font-tnr: 'Times New Roman', 'Times Roman', Times, serif;
 }

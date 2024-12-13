@@ -9,8 +9,11 @@ h1+p,h1 {
     line-height: 1.5;
 }
 
-sup {
+sup, sub {
     line-height: 0;
+    font-size: var(--font-size-ss-ss);
+    font-family: var(--font-ss);
+    font-variant-numeric: tabular-nums;
 }
 
 p+p {
@@ -29,6 +32,8 @@ p+p {
 p {
     margin: 0 0 0 0;
 }
+
+/* Headers */
 
 h1,
 h2,
@@ -136,6 +141,7 @@ ol>li::before {
     content: counters(item, ".") ". ";
     display: table-cell;
     padding-right: 0.5rem;
+    font-variant-numeric: tabular-nums;
 }
 
 li ol>li {
@@ -144,17 +150,86 @@ li ol>li {
 
 li ol>li::before {
     content: counters(item, ".") " ";
+    font-variant-numeric: tabular-nums;
 }
 
 /* Text */
+
+/* Helper classes */
+
+.cmr-10 {
+    font-size: 83%;
+}
+
+.cmmi-10 {
+    font-size: 83%;
+    font-style: italic;
+}
+
+.cmsy-10 {
+    font-size: 83%;
+}
+
+.cmr-17x-x-143 {
+    font-size: 202%;
+}
+
+.cmr-12x-x-120 {
+    font-size: 120%;
+}
+
+.cmti-12 {
+    font-style: italic;
+}
+
+.cmmi-12 {
+    font-style: italic;
+}
+
+.cmbx-12 {
+    font-weight: bold;
+}
+
+.cmr-10x-x-109 {
+    font-size: 90%;
+}
+
+.cmti-10 {
+    font-size: 83%;
+    font-style: italic;
+}
+
+.cmsl-10 {
+    font-size: 83%;
+    font-style: oblique;
+}
+
+p.noindent {
+    text-indent: 0em
+}
+
+td p.noindent {
+    text-indent: 0em;
+    margin-top: 0em;
+}
+
+p.nopar {
+    text-indent: 0em;
+}
+
+p.indent {
+    text-indent: 1.5em
+}
 
 .emdash {
     display: inline-block;
     width: var(--width-1-2);
     background: var(--text);
     height: 0.0625rem;
-    /* Rem/em conversion: 1/16 */
     line-height: 0;
     vertical-align: 0.25rem;
-    /* Rem/em conversion: 4/16 */
+}
+
+dt {
+    font-weight: 700;
 }

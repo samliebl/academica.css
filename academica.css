@@ -8,70 +8,7 @@
 @import url('css/spacing.css');
 @import url('css/text.css');
 
-/* start css.sty */
-.cmr-10 {
-    font-size: 83%;
-}
 
-.cmmi-10 {
-    font-size: 83%;
-    font-style: italic;
-}
-
-.cmsy-10 {
-    font-size: 83%;
-}
-
-.cmr-17x-x-143 {
-    font-size: 202%;
-}
-
-.cmr-12x-x-120 {
-    font-size: 120%;
-}
-
-.cmti-12 {
-    font-style: italic;
-}
-
-.cmmi-12 {
-    font-style: italic;
-}
-
-.cmbx-12 {
-    font-weight: bold;
-}
-
-.cmr-10x-x-109 {
-    font-size: 90%;
-}
-
-.cmti-10 {
-    font-size: 83%;
-    font-style: italic;
-}
-
-.cmsl-10 {
-    font-size: 83%;
-    font-style: oblique;
-}
-
-p.noindent {
-    text-indent: 0em
-}
-
-td p.noindent {
-    text-indent: 0em;
-    margin-top: 0em;
-}
-
-p.nopar {
-    text-indent: 0em;
-}
-
-p.indent {
-    text-indent: 1.5em
-}
 
 @media print {
     div.crosslinks {
@@ -103,7 +40,7 @@ img.math {
     vertical-align: middle;
 }
 
-li p.indent {
+li p.ind {
     text-indent: 0em
 }
 
@@ -165,11 +102,11 @@ td.displaylines {
     white-space: nowrap;
 }
 
-.centerline {
+.c {
     text-align: center;
 }
 
-.rightline {
+.r {
     text-align: right;
 }
 
@@ -180,18 +117,18 @@ div.verbatim {
     clear: both;
 }
 
-.fbox {
+flexbox {
     padding-left: 3.0pt;
     padding-right: 3.0pt;
     text-indent: 0pt;
     border: solid black 0.4pt;
 }
 
-div.fbox {
+divflexbox {
     display: table
 }
 
-div.center div.fbox {
+div.center divflexbox {
     text-align: center;
     clear: both;
     padding-left: 3.0pt;
@@ -228,11 +165,11 @@ div.flushleft {
     text-align: left;
 }
 
-.underline {
+.u {
     text-decoration: underline;
 }
 
-.underline img {
+.u img {
     border-bottom: 1px solid black;
     margin-bottom: 1pt;
 }
@@ -267,7 +204,7 @@ span.footnote-mark a sup.textsuperscript {
     font-size: 80%;
 }
 
-div.footnotes {
+div.fn {
     border-top: solid 1px black;
     border-bottom: solid 1px black;
     padding-bottom: 1ex;
@@ -278,14 +215,14 @@ div.footnotes {
     font-size: 85%;
 }
 
-div.footnotes p {
+div.fn p {
     margin-top: 0;
     margin-bottom: 0;
     text-indent: 0;
 }
 
 div.tabular,
-div.center div.tabular {
+div.c div.tabular {
     text-align: center;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -364,7 +301,7 @@ table[rules] {
     margin: 0px;
 }
 
-.tabbing-right {
+.r {
     text-align: right;
 }
 
@@ -547,7 +484,7 @@ p.bibitem-p {
     font-weight: bold;
 }
 
-.quote {
+.q {
     margin-bottom: 0.25em;
     margin-top: 0.25em;
     margin-left: 1em;
@@ -615,24 +552,12 @@ dt.enumerate {
     margin-left: 10%;
 }
 
-.uline {
+.u {
     text-decoration: underline;
 }
 
-.uuline {
-    text-decoration: underline;
-}
-
-span.sout {
+.s {
     text-decoration: line-through
-}
-
-span.xout {
-    text-decoration: line-through
-}
-
-span.uwave {
-    text-decoration: underline
 }
 
 .caption span.id {
