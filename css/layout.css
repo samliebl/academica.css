@@ -11,13 +11,10 @@ body {
 }
 
 body {
-    font-family: "Times New Roman", Times, serif;
-    max-width: 36rem;
+    max-width: var(--measure-width);
     margin: 0;
     line-height: 1.5em;
-    font-size: 1.167rem;
     padding: 3rem;
-    color: var(--text);
 }
 
 img {
@@ -31,10 +28,7 @@ div.center {
 
 /* end css.sty */
 
-.redacted {
-    color: #000;
-    background-color: #000;
-}
+
 
 @media screen and (max-width: 768px) {
     body {

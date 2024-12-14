@@ -8,8 +8,6 @@
 @import url('css/spacing.css');
 @import url('css/text.css');
 
-
-
 @media print {
     div.crosslinks {
         visibility: hidden;
@@ -117,14 +115,14 @@ div.verbatim {
     clear: both;
 }
 
-flexbox {
+.flexbox {
     padding-left: 3.0pt;
     padding-right: 3.0pt;
     text-indent: 0pt;
     border: solid black 0.4pt;
 }
 
-divflexbox {
+div.flexbox {
     display: table
 }
 
@@ -484,18 +482,7 @@ p.bibitem-p {
     font-weight: bold;
 }
 
-.q {
-    margin-bottom: 0.25em;
-    margin-top: 0.25em;
-    margin-left: 1em;
-    margin-right: 1em;
-    text-align: justify;
-}
 
-.verse {
-    white-space: nowrap;
-    margin-left: 2em
-}
 
 div.maketitle {
     text-align: center;
