@@ -1,2 +1,4 @@
 .DS_Store
 bs-config.js
+dist
+node_modules
