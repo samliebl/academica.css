@@ -1,0 +1,26 @@
+/* Variables */
+@import 'color';
+/* My styles */
+$font-size: 1rem;
+// Assuming sizes are based on `$font-size: 1rem`...
+$measure-width: calc($font-size * 40); // 40rem
+$measure-width-midprose: calc($measure-width * 0.7); 
+// 70% of 40rem = 28rem | 448px
+$width: calc($measure-width / 16); // (40rem/16) = 2.5rem | 40px
+$width-1-2: calc($width / 2); // (2.5rem/2) = 1.25rem | 20px
+$width-1-4: calc($width / 4); // (2.5rem/4) = 0.625rem | 16px
+$width-1-5: calc($width / 5); // (2.5rem/5) 0.5rem | 8px
+$indent: calc($font-size*3)
+
+$inter-font-feature-settings: 'liga'1, 'calt'1;
+/* fix for Chrome */
+
+$font-size-italic: 1.05rem;
+$font-size-monospace: calc($font-size * 0.85);
+$font-size-ss-ss: calc($font-size * 0.65);
+$font-size-lede: calc($font-size * 1.25);
+/* Thanks to Inter by https://rsms.me/ */
+$font-ss: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+$font-int: Inter, sans-serif;
+$font-rm: 'Roboto Mono', monospace;
+$font-tnr: 'Times New Roman', 'Times Roman', Times, serif;

@@ -1,0 +1,25 @@
+{
+  "name": "academica.css",
+  "version": "1.0.0",
+  "description": "Academic style css for a blog.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "main": "build.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samliebl/academica.css.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samliebl/academica.css/issues"
+  },
+  "homepage": "https://github.com/samliebl/academica.css#readme",
+  "dependencies": {
+    "clean-css": "^5.3.3",
+    "sass": "^1.83.0"
+  }
+}

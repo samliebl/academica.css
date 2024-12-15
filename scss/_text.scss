@@ -1,0 +1,193 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: $font-size;
+    color: $text;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+sup, sub {
+    line-height: 0;
+    font-size: $font-size-ss-ss;
+    font-family: $font-ss;
+    font-variant-numeric: tabular-nums;
+    font-weight: 300;
+}
+
+sub em,
+sup em {
+    font-style: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+p + p {
+    text-indent: 3rem;
+}
+
+p {
+    margin: 0;
+    font-size: $font-size;
+    line-height: 1.5;
+}
+
+.lede {
+    margin: 0 0 1rem 0;
+    font-size: $font-size-lede;
+}
+
+.lede + p {
+    text-indent: 0;
+}
+
+// Headers
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    margin: 0;
+        font-weight: 700;
+    &::before {
+        position: absolute;
+        margin: 0 0 0 -2rem;
+        font-family: menlo;
+        font-size: $font-size-monospace;
+        font-weight: 400;
+        color: hsla(0, 100%, 50%, 0.5);
+        font-style: normal;
+    }
+}
+
+h1 {
+    margin: $font-size 0 0 0;
+    font-size: calc($font-size * 2);
+    line-height: 1.5;
+    &::before {
+        content: "h1";
+        font-style: normal;
+    }
+}
+
+h2 {
+    border-bottom: #ddd 1px solid;
+    margin: $font-size 0 0.25rem 0;
+
+    &::before {
+        content: "h2";
+    }
+}
+h3 {
+    margin: $font-size 0 $font-size 0;
+
+    &::before {
+        content: "h3";
+    }
+}
+h4 {
+    margin:$font-size 0 0 0;
+
+    &::before {
+        content: "h4";
+    }
+}
+h5 {
+    margin: $font-size 0 0 0;
+    font-weight: 700;
+
+    &::before {
+        content: "h5";
+    }
+}
+h6 {
+    margin: $font-size 0 0 0;
+    font-style: italic;
+    font-weight: 400;
+    &::before {
+        content: "h6";
+        font-style: normal;
+    }
+}
+
+// Add similar structures for h3, h4, h5, h6...
+.emdash {
+    display: inline-block;
+    width: $width-1-2;
+    background: $text;
+    height: 0.0625rem;
+    line-height: 0;
+    vertical-align: 0.25rem;
+}
+
+// Lists
+ul {
+    padding: 0 0 0 3rem;
+}
+
+blockquote {
+    margin-left: 0;
+    padding: 0 0 0 3rem;
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: item;
+    padding: 0 0 0 1rem;
+
+    > li {
+        display: table;
+        counter-increment: item;
+
+        &::before {
+            content: counters(item, ".") ". ";
+            display: table-cell;
+            padding-right: 0.5rem;
+            font-variant-numeric: tabular-nums;
+        }
+    }
+
+    li > ol > li::before {
+        content: counters(item, ".") " ";
+        font-variant-numeric: tabular-nums;
+    }
+}
+
+// Definition lists
+dt {
+    font-weight: 700;
+}
+
+dd {
+    margin-left: 3rem;
+}
+
+// Code and text
+code, samp {
+    font-size: $font-size-monospace;
+    color: $gray-100;
+    background-color: $gray-900;
+    padding: 0.25rem;
+}
+
+var {
+    font-size: $font-size-italic;
+    color: $red;
+}
+
+u, a, dfn {
+    text-underline-offset: 0.1875rem;
+}
+
+dfn {
+    font-style: normal;
+    text-decoration: underline dashed;
+}
+
+em, i, cite {
+    font-size: $font-size-italic;
+}
+
+mark {
+    padding: 0.25rem;
+}

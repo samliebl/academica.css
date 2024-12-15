@@ -1,0 +1,49 @@
+html,
+body {
+    // For WebKit (Chrome, Safari)
+    -webkit-font-smoothing: subpixel-antialiased;
+    // For Firefox
+    font-smoothing: antialiased;
+    // For Edge
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    color: $text;
+}
+
+body {
+    max-width: $measure-width;
+    margin: 0 0 0 $indent;
+    line-height: calc(indent/2);
+    padding: $indent;
+}
+
+img {
+    max-width: 100%;
+    max-height: 20em;
+}
+
+div.center {
+    line-height: 2em;
+}
+
+// End css.sty
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 1rem !important;
+        padding: 2rem;
+    }
+
+    .lede {
+        font-size: 1.167rem;
+    }
+
+    h1::before,
+    h2::before,
+    h3::before,
+    h4::before,
+    h5::before,
+    h6::before {
+        display: none;
+    }
+}
